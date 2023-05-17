@@ -1,4 +1,5 @@
 package io.codelex.typesandvariables.exercises;
+
 import java.util.Scanner;
 
 public class UpperCaseCounter {

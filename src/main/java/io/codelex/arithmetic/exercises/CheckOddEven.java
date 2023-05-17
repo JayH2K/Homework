@@ -1,5 +1,7 @@
 package io.codelex.arithmetic.exercises;
+
 import java.util.Scanner;
+
 public class CheckOddEven {
     public static void main(String[] args) {
 
@@ -7,7 +9,7 @@ public class CheckOddEven {
 
         System.out.print("Please input a number");
         int num = reader.nextInt();
-        if(num % 2 == 0)
+        if (num % 2 == 0)
             System.out.println("even");
         else
             System.out.println("odd");
