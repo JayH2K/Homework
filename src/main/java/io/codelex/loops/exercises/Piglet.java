@@ -12,7 +12,7 @@ public class Piglet {
         if (input.equals("yes")) {
             for (int i = 1; i > 0; ) {
                 Random rand = new Random();
-                int num = rand.nextInt((10 - 1) + 1) + 1;
+                int num = rand.nextInt((10)) + 1;
                 if (num > 1) {
                     System.out.println("You rolled " + num + "! Roll again?");
                     score += num;

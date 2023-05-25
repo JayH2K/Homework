@@ -9,7 +9,7 @@ public class FizzBuzz {
         int input = scanInput.nextInt();
         int outputCounter = 0;
         for (int i = 1; i < input; i++) {
-            ++outputCounter;
+            outputCounter++;
             if (i % 3 == 0) {
                 System.out.print("Fizz ");
             } else if (i % 5 == 0) {
