@@ -1,8 +1,10 @@
 package io.codelex.typesandvariables.practice;
+
 import java.text.DecimalFormat;
 
 public class VariablesAndNames {
     private static final DecimalFormat decimalFormator = new DecimalFormat("0.00");
+
     public static void main(String[] args) {
         int cars, seatsInACar, drivers, passengers, carsNotDriven, carsDriven;
         double carpoolCapacity, averagePassengersPerCar;
