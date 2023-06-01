@@ -5,27 +5,15 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 class Solution {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        int N = in.nextInt();
+        String N = in.nextLine();
 
-        long A = 1;
-
-        if (N > 0) {
-
-            for (int i = 1; i <= N; i++) {
-                A = A * i;
-            }
-        } else {
-            A = Long.parseLong("No negative integers");
+        for (String i : N.split("")
+        ) {
+            
         }
-
-        System.out.println(A);
     }
 }
