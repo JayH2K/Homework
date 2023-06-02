@@ -31,23 +31,30 @@ public class FlightPlanner {
         boolean end = false;
         String start = "";
         String plan = "";
-        String input = in.nextLine();
-        plan = plan.concat(input);
-        start = input;
-        System.out.println("Available destinations from " + input);
-        for (int i = 0; i < flights.get(input).size(); i++) {
-            System.out.println(flights.get(input).get(i));
-        }
-        while (!end) {
-            input = in.nextLine();
-            plan = plan.concat(" -> " + input);
-            if (input.equals(start)) {
-                end = true;
-            }
+        try {
+            String input = in.nextLine();
+            plan = plan.concat(input);
+            start = input;
             System.out.println("Available destinations from " + input);
             for (int i = 0; i < flights.get(input).size(); i++) {
                 System.out.println(flights.get(input).get(i));
             }
+            while (!end) {
+
+                input = in.nextLine();
+                plan = plan.concat(" -> " + input);
+                if (input.equals(start)) {
+                    end = true;
+                }
+                System.out.println("Available destinations from " + input);
+                for (int i = 0; i < flights.get(input).size(); i++) {
+                    System.out.println(flights.get(input).get(i));
+                }
+
+            }
+        } catch (NullPointerException e) {
+            System.out.println("Not an available destination. Check case/spelling and start over.");
+            System.exit(0);
         }
         System.out.println("Your flight plan: " + plan);
     }
