@@ -1,6 +1,12 @@
 package io.codelex.polymorphism.practice.exercise1;
 
-public class Bmw {
+public class Bmw implements Car, Boost {
+    private final String name = "BMW";
+
+    public String getName() {
+        return name;
+    }
+
     private Integer currentSpeed = 0;
 
     public void speedUp() {
@@ -15,7 +21,7 @@ public class Bmw {
         return currentSpeed.toString();
     }
 
-    public void startEngine() {
-        System.out.println("Rrrrrrr.....");
+    public void useNitrousOxideEngine() {
+        currentSpeed = currentSpeed + 30;
     }
 }
