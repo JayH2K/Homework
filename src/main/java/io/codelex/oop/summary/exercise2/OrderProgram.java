@@ -1,5 +1,7 @@
 package io.codelex.oop.summary.exercise2;
 
+import io.codelex.oop.summary.generics.Combiner;
+
 public class OrderProgram {
     public static void main(String[] args) throws WrongOrderException, BadFoodException {
         SellableThing egg = new FoodItem("Egg", 2.99, "2033-12-10");
