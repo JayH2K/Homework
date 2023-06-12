@@ -2,22 +2,22 @@ package io.codelex.oop.summary.generics;
 
 import java.math.BigDecimal;
 
-public class Printer {
+public class Printer<T> {
 
     //Fix this class so that any object, not only BigDecimal can be printed
     //Test the functionality
 
-    private final BigDecimal thingToPrint;
+    private final T thingToPrint;
 
-    public Printer(BigDecimal thingToPrint) {
+    public Printer(T thingToPrint) {
         this.thingToPrint = thingToPrint;
     }
 
     public void print() {
-        System.out.println(thingToPrint);
+        System.out.println(thingToPrint.toString());
     }
 
-    public BigDecimal getThingToPrint() {
+    public T getThingToPrint() {
         return thingToPrint;
     }
 }
