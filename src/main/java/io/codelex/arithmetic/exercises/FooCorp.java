@@ -16,24 +16,25 @@ public class FooCorp {
             return 0;
         }
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         double employee1pay = sortData("employee 1", 7.50, 35);
         double employee2pay = sortData("employee 2", 8.20, 47);
         double employee3pay = sortData("employee 3", 10.200, 73);
 
-        if (employee1pay>0) {
+        if (employee1pay > 0) {
             System.out.println("Employee 1 totally pay: " + employee1pay);
         } else {
             System.out.println("Employee 1 totally pay: ERROR");
         }
 
-        if (employee2pay>0) {
+        if (employee2pay > 0) {
             System.out.println("Employee 2 totally pay: " + employee2pay);
         } else {
             System.out.println("Employee 2 totally pay: ERROR");
         }
 
-        if (employee3pay>0) {
+        if (employee3pay > 0) {
             System.out.println("Employee 3 totally pay: " + employee3pay);
         } else {
             System.out.println("Employee 3 totally pay: ERROR");

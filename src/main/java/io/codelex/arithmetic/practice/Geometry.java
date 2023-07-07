@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 class Geometry {
     static BigDecimal areaOfCircle(BigDecimal radius) {
-        return ((radius.multiply(radius)).multiply(BigDecimal.valueOf(3.14159265359)));
+        return ((radius.multiply(radius)).multiply(BigDecimal.valueOf(Math.PI)));
     }
 
     static BigDecimal areaOfRectangle(BigDecimal length, BigDecimal width) {

@@ -1,5 +1,7 @@
 package io.codelex.typesandvariables.exercises;
+
 import java.util.Scanner;
+
 public class SumCalculator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
