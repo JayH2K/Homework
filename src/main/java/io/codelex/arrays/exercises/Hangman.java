@@ -70,4 +70,3 @@ public class Hangman {
         }
     }
 }
-//diezgan random gadijumos programma izmet out of bounds error un es īsti nevaru noteikt kapēc, taču 80% no laika viss strādā, kā iecerēts
