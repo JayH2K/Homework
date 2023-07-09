@@ -11,15 +11,13 @@ public class TenBillion {
 
         long n = in.nextLong();
 
-        /*
-        todo - check if Long
-        if (?) {
-            //todo - check if n is less than zero
-            if (?) {
+
+/*
+        if (n>2147483647 || n<-2147483647) {
+            if (n<0) {
                 n *= -1;
             }
-            fixme
-            if (?) {
+            if (n>=(10000L *1000000)) {
                 System.out.println("Number is greater or equals 10,000,000,000!");
             } else {
                 int digits = 1;
