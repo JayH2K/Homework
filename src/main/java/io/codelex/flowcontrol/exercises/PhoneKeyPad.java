@@ -13,31 +13,31 @@ public class PhoneKeyPad {
         String[] inputArray = input.split("", 0);
 
 
-        for (int i = 0; inputArray.length >= i; ++i) {
+        for (int i = 0; inputArray.length > i; ++i) {
             inputArray[i] = inputArray[i].toLowerCase();
             // if method:
-            /*
+
             if (inputArray[i].matches("^[\\w.-]+$")) {
-                if (Objects.equals(inputArray[i], "a") || Objects.equals(inputArray[i], "b") || Objects.equals(inputArray[i], "c")) {
+                if (inputArray[i].equals("a") || inputArray[i].equals("b") || inputArray[i].equals("c")) {
                     System.out.println("2");
-                } else if (Objects.equals(inputArray[i], "d") || Objects.equals(inputArray[i], "e") || Objects.equals(inputArray[i], "f")) {
+                } else if (inputArray[i].equals("d") || inputArray[i].equals("e") || inputArray[i].equals("f")) {
                     System.out.println("3");
-                } else if (Objects.equals(inputArray[i], "g") || Objects.equals(inputArray[i], "h") || Objects.equals(inputArray[i], "i")) {
+                } else if (inputArray[i].equals("g") || inputArray[i].equals("h") || inputArray[i].equals("i")) {
                     System.out.println("4");
-                } else if (Objects.equals(inputArray[i], "j") || Objects.equals(inputArray[i], "k") || Objects.equals(inputArray[i], "l")) {
+                } else if (inputArray[i].equals("j") || inputArray[i].equals("k") || inputArray[i].equals("l")) {
                     System.out.println("5");
-                } else if (Objects.equals(inputArray[i], "m") || Objects.equals(inputArray[i], "n") || Objects.equals(inputArray[i], "o")) {
+                } else if (inputArray[i].equals("m") || inputArray[i].equals("n") || inputArray[i].equals("o")) {
                     System.out.println("6");
-                } else if (Objects.equals(inputArray[i], "p") || Objects.equals(inputArray[i], "q") || Objects.equals(inputArray[i], "r") || Objects.equals(inputArray[i], "s")) {
+                } else if (inputArray[i].equals("p") || inputArray[i].equals("q") || inputArray[i].equals("r") || inputArray[i].equals("s")) {
                     System.out.println("7");
-                } else if (Objects.equals(inputArray[i], "t") || Objects.equals(inputArray[i], "u") || Objects.equals(inputArray[i], "v")) {
+                } else if (inputArray[i].equals("t") || inputArray[i].equals("u") || inputArray[i].equals("v")) {
                     System.out.println("8");
-                } else if (Objects.equals(inputArray[i], "w") || Objects.equals(inputArray[i], "x") || Objects.equals(inputArray[i], "y") || Objects.equals(inputArray[i], "z")) {
+                } else if (inputArray[i].equals("w") || inputArray[i].equals("x") || inputArray[i].equals("y") || inputArray[i].equals("z")) {
                     System.out.println("9");
                 }
             }
 
-             */
+
             // switch method:
             /*
             switch (inputArray[i]) {
